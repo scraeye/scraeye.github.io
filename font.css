@@ -1,0 +1,64 @@
+/*<!-- (5) Embedded style sheet -->
+<!--
+Orkney Bold Italic
+Orkney Bold
+Orkney Light Italic
+Orkney Light
+Orkney Medium Italic
+Orkney Medium
+Orkney Regular Italic
+Orkney Regular
+-->*/
+
+
+@font-face {
+    src: url('font/Orkney\ Bold.woff2');
+    font-family:'OrkneyBold';
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    src: url('font/Orkney\ Bold\ Italic.woff2');
+    font-family:'OrkneyBold';
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url('font/Orkney\ Light.woff2');
+    font-family:'OrkneyLight';
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    src: url('font/Orkney\ Light\ Italic.woff2');
+    font-family:'OrkneyLight';
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url('font/Orkney\ Medium.woff2');
+    font-family:'OrkneyMedium';
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    src: url('font/Orkney\ Medium\ Italic.woff2');
+    font-family:'OrkneyMedium';
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    src: url('font/Orkney\ Regular.woff2');
+    font-family:'OrkneyRegular';
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    src: url('font/Orkney\ Regular\ Italic.woff2');
+    font-family:'OrkneyRegular';
+    font-style: italic;
+    font-weight: normal;
+}
