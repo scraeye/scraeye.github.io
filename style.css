@@ -1,10 +1,12 @@
 body{
     font-family: "OrkneyLight";
-    background-color:rgba(255, 255, 255, 0.808);    
+    background-color:rgba(255, 255, 255, 0.808);  
+    font-size: 13px;  
 }
 
 #qrcode{
-    position: absolute;
+    float: right;
+    position: relative;
     display: block;
     z-index: 10;
     top: 0px;
@@ -13,15 +15,22 @@ body{
     height: 100px;
 }
 
+h1{
+    font-size: 26px;
+}
+
 h2{
+    font-size: 20px;
     color: grey;
 }
 
 h3{
+    font-size: 16px;
     color: rgb(4, 4, 199);
 }
 
 h4{
+    font-size: 16px;
     margin: 10px 0px 5px 0px;
 }
 
@@ -48,11 +57,19 @@ li::before {
 }
 
 .date{
+    font-size: 14px;  
     display: inline-block;
     width: 80px;
     font-style: italic;
     color: grey;
     font-weight: normal;
+}
+
+.w1{
+    width: 50px;
+}
+.w2{
+    width: 90px;
 }
 
 a span.skill{
@@ -123,7 +140,7 @@ a:hover span.skill{
     display: inline-block;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .wrapper {
         display: grid;
         grid-template-columns: 250px 1fr;
