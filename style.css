@@ -4,6 +4,10 @@ body{
     font-size: 13px;  
 }
 
+:root {
+    --main-color: rgb(4, 4, 199);
+}
+
 #qrcode{
     float: right;
     position: relative;
@@ -22,8 +26,15 @@ body{
     right: 0px;
 }
 
+a {
+    color: var(--main-color);
+    text-decoration:none;
+}
+
 h1{
     font-size: 26px;
+    margin-top: 0px;
+    padding: 0px;
 }
 
 h2{
@@ -33,19 +44,19 @@ h2{
 
 h3{
     font-size: 18px;
-    color: rgb(4, 4, 199);
+    color: var(--main-color);
 }
 
 h4{
     font-size: 16px;
-    margin: 10px 0px 5px 0px;
+    margin: 0px 0px 0px 0px;
 }
 
 ul {
     list-style: none;
 }
 li::before {
-    content: "\25AA"; color: rgb(4, 4, 199);
+    content: "\25AA"; color: var(--main-color);
     display: inline-block; width: 1em;
     margin-left: -1em
 }
@@ -79,15 +90,25 @@ li::before {
     width: 90px;
 }
 
-a span.skill{
-    color: rgb(187, 159, 3);
+.cert{
+    color: var(--main-color);
+}
+.a1{
+    background-color: #ffffff;
+}
+.a3{
+    background-color: rgb(206, 206, 255);
+}
+.a5{
+    background-color: #a4a2ff;
+    /*background-color: rgb(148, 146, 255);*/
 }
 span.skill:hover{
-    color: red;
+    color: cornflowerblue;
     cursor: default;
 }
 a:hover span.skill{
-    color: red;
+    color: cornflowerblue;
     cursor: pointer;
 }
 
@@ -97,7 +118,7 @@ a:hover span.skill{
     border-style: solid;
     border-radius:6px;
     padding: 5px;
-    margin: 2px;
+    margin: 2px 0px 2px 0px;
 }
 
 
@@ -109,6 +130,10 @@ a:hover span.skill{
 
 .wrapper > div{
     padding: 0px 10px 0px 0px;
+}
+
+.bloc{
+    margin-top: -20px;
 }
 
 .icon{
@@ -180,5 +205,7 @@ a:hover span.skill{
     #link{
         display:none;
     }
-
+    /*#legend{
+        display:none;
+    }*/
 }
