@@ -3,9 +3,12 @@ body{
     background-color:rgba(255, 255, 255, 0.808);  
     font-size: 13px;  
 }
+p, span{
+    text-align: justify;
+}
 
 :root {
-    --main-color: rgb(4, 4, 199);
+    --main-color: rgb(0, 0, 150);
 }
 
 #qrcode{
@@ -45,11 +48,30 @@ h2{
 h3{
     font-size: 18px;
     color: var(--main-color);
+    margin: 6px 0px 10px 0px;
 }
 
 h4{
     font-size: 16px;
     margin: 0px 0px 0px 0px;
+}
+
+#legend{
+    /*float: right;*/
+}
+
+#legend h4{
+    font-style: italic;
+    font-weight: normal;
+}
+
+#legend p{
+    font-size: 12px; 
+    font-style: italic;
+}
+
+#legend h4, #legend p{
+    display:inline;
 }
 
 ul {
@@ -63,15 +85,18 @@ li::before {
 
 .organism{
     display: block;
-    margin: 10px 0px 5px 0px;
+    margin: 5px 0px 5px 0px;
 }
 
 .formation > div{
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.formation > div > p{    
+    margin: 5px 0px 5px 0px;
 }
 
 .experience > div{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .date{
@@ -119,21 +144,30 @@ a:hover span.skill{
     border-radius:6px;
     padding: 5px;
     margin: 2px 0px 2px 0px;
+    /*font-size: 12px;*/
 }
 
-
-.wrapper {
+#head{
+    display: block;
     max-width: 800px;
     margin: 0em auto;
-    /*background-color: aqua;*/
+}
+.wrapper {
+    display: block;
+    max-width: 800px;
+    margin: 0em auto;
 }
 
 .wrapper > div{
     padding: 0px 10px 0px 0px;
 }
 
-.bloc{
-    margin-top: -20px;
+.bloc > p, .bloc > div > p{
+    margin: 4px 0px 6px 0px;
+}
+
+.bskill > p{
+    text-align: initial;
 }
 
 .icon{
@@ -148,7 +182,7 @@ a:hover span.skill{
     color: #000000;
     text-decoration: none;
     height: 32px;
-    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .contact span {
@@ -160,16 +194,22 @@ a:hover span.skill{
 .contact img{
     margin-right: 20px;
 }
-
-.photo{
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-image: url('photo/SansFondRond.png');
+#photo{
+    display: block;
+    float: left;
+    height: 190px;
+    text-align: center;
+    color: grey;
 }
 #name{
-    vertical-align: top;
-    display: inline-block;
+    display: block;
+    width: 400px;
+}
+#contact{
+    padding-left: 10px;
+    display: block;
+    width: 200px;
+    float: right;
 }
 
 @media (orientation: landscape) {
@@ -179,12 +219,12 @@ a:hover span.skill{
     }
 
     .language{
-        margin-top: 50px;
+        margin-top: 20px;
     }
 
-    #name{
+    /*#name{
         width: 350px;
-    }
+    }*/
 }
 @media (orientation: portrait) {
 
@@ -196,12 +236,12 @@ a:hover span.skill{
     }
 
     .language{
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
-    #name{
+    /*#name{
         width: 280px;
-    }
+    }*/
     #link{
         display:none;
     }

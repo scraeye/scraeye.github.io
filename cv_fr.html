@@ -13,50 +13,51 @@
         <a href="cv_en.html"><img src="image/United-kingdom_48.png"></a><br>
         <a href="cv-fr-scraeye.pdf"><img src="image/file_pdf_download_icon-icons.com_48.png"></a>
     </div>
-    <div class="wrapper">
-        <div>
+    <div id="head">
+        <img id="qrcode" src="image/code.png"/>
+        <div id="contact">
             <div class="contact">
                 <a href="mailto:scraeye@gmail.com" target="_blank">
-                    <img src="icon/mail-black-envelope-symbol_icon-icons.com_56519.png" />
+                    <img src="icon/mail-black-envelope-symbol_icon-icons.com_56519.png" width="16px" height="16px" />
                     <span>scraeye@gmail.com</span>
                 </a>
             </div>
             <div class="contact">
                 <a href="https://www.openstreetmap.org/relation/79234#map=11/46.1927/6.1791" target="_blank">
-                    <img src="icon/position-marker_39550.png"/>
-                    <span>Bossey, Haute-Savoie, France</span>
+                    <img src="icon/position-marker_39550.png" width="16px" height="16px" />
+                    <span>Bossey, Haute-Savoie, <br/>France</span>
                 </a>
             </div>
             <div class="contact">
                 <a href="tel:+33663192599" target="_blank">
-                    <img src="icon/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png"/>
+                    <img src="icon/phone-call-auricular-symbol-in-black_icon-icons.com_56483.png" width="16px" height="16px" />
                     <span>+33 6 63 19 25 99</span>
                 </a>
             </div>
             <div class="contact">
                 <a href="https://www.linkedin.com/in/scraeye/" target="_blank">
-                    <img src="icon/sociallinkedin_member_70.png"/>
+                    <img src="icon/sociallinkedin_member_70.png" width="16px" height="16px" />
                     <span>scraeye</span>
                 </a>
             </div>
         </div>
-        <div>
-            <img src="photo/SansFondRond.png"/>
-            <div id="name">
-                <img id="qrcode" src="image/code.png"/>
-                <h1>St&eacute;phane<br> CRAEYE</h1>
-                <h2>Data Scientist</h2>
-                <p>Titulaire d'un dipl&ocirc;me de Data Scientist d'une des 
-                    <a target="_blank" href="https://www.linkedin.com/posts/yoeltordjman_datascience-bootcamp-ranking-activity-6715239740880236545-dqbB/?utm_source=sendinblue&utm_campaign=NEWSLETTER_25092020&utm_medium=email">meilleurs formations</a> 
-                    et avec une grande exp&eacute;rience de la gestion des donn&eacute;es </p>
-            </div>
+        <div id="photo"><img src="photo/SansFondRond.png"/><br/>42 ans</div>
+        <div id="name">
+            <h1>St&eacute;phane<br> CRAEYE</h1>
+            <h2>Data Scientist</h2>
+            <p>Titulaire d'un dipl&ocirc;me de Data Scientist d'une des 
+                <a target="_blank" href="https://www.linkedin.com/posts/yoeltordjman_datascience-bootcamp-ranking-activity-6715239740880236545-dqbB/?utm_source=sendinblue&utm_campaign=NEWSLETTER_25092020&utm_medium=email">meilleures formations</a> 
+                et avec une grande exp&eacute;rience de la gestion des donn&eacute;es </p>
         </div>
+    </div>
+    <div class="wrapper">
         <div class="formation bloc">
             <h3>Formations</h3>
             <div>
                 <h4><span class="date w1">2020</span> Data Scientist</h4>
-                <img src="icon/LogoDataScientest.png"/>
-                <img src="icon/Paris1.png"/><br>
+                <p>Statistique, Data Visualisation, Machine Learning Avancé, Big data / Database, Deep Learning, Système Complexe et IA</p>
+                <img src="icon/LogoDataScientest.png" />
+                <img src="icon/300px-Pantheon-Sorbonne_University_logo.svg.png" width="100px" height="32px" /><br>
                 <span class="organism">                    
                     DataScientest et co-certifi&eacute; par l’universit&eacute; Paris La Sorbonne
                 </span>
@@ -80,7 +81,7 @@
                 </ul>
             </div>
         </div>
-        <div class="bloc">
+        <div class="bskill bloc">
             <h3>Comp&eacute;tences</h3>
             <h4>Data Science en Python</h4>
             <p>
@@ -108,7 +109,7 @@
                 <span class="skill a5">SQL Server</span>
                 <span class="skill a3">Oracle</span>
                 <span class="skill a5">Sybase</span>
-                <span class="skill">Access</span>
+                <span class="skill a1">Access</span>
             </p>
             <h4>Business Intelligence (ETL et Rapport)</h4>
             <p>
@@ -118,7 +119,8 @@
             </p>
             <h4>M&eacute;thode</h4>
             <p>
-                <span class="skill a5">Agile (Scrum)</span>
+                <span class="skill a5">Scrum</span>
+                <span class="skill a3">Extreme Programming</span>
                 <span class="skill a5">UML</span>
                 <span class="skill a5">Merise</span>
             </p>
@@ -140,7 +142,7 @@
                 <span class="skill a5">Team Foundation Server</span>
             </p>
             <div id="legend">
-                <h4>L&eacute;gende</h4>
+                <h4>L&eacute;gende : </h4>
                 <p>
                     <span class="skill cert">Certifi&eacute;</span>
                     <span class="skill a1">Jusqu'à 1 an</span>
@@ -163,12 +165,22 @@
             <h3>Exp&eacute;riences</h3>
             <div>
                 <h4><span class="date w1">2020</span>Data Scientist - <a href="https://share.streamlit.io/scraeye/projet-datascience-voynich/main/01_exploration.py" target="_blank">Manuscrit Voynich</a></h4>
+                <p>
+                    Exploration du texte, étude de la proximité des mots avec Word2Vec et génération de texte avec les réseaux de neurones récurrents.
+                    Réalisé en autonomie comme en entreprise
+                </p>
             </div>
             <div>
-                <h4><span class="date w1">2019</span>Reconversion professionnelle</h4>
+                <h4><span class="date w1">2019</span>Bilan de compétences - Pôle Emploi</h4>
             </div>
             <div>
-                <h4><span class="date w2">2018 - 2002</span>D&eacute;veloppeur Microsoft .Net</h4>
+                <h4><span class="date w2">2018 - 2002</span>D&eacute;veloppeur sénior Microsoft .Net</h4>
+                <p>
+                    Analyse, Rédaction d'analyse spécifiques technique, Coordination technique inter équipe, Test unitaire et d'intégration, 
+                    Management technique de personne, Déploiement international d'application critique en autonomie, Support niveau 2 et 3
+                    <br/>
+                    Domaines fonctionnels : Agriculture, Santé, Mécanique et Banque
+                </p>
             </div>
 
         </div>
