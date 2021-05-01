@@ -118,15 +118,8 @@ li::before {
 .cert{
     color: var(--main-color);
 }
-.a1{
-    background-color: #ffffff;
-}
-.a3{
-    background-color: rgb(206, 206, 255);
-}
-.a5{
-    background-color: #a4a2ff;
-    /*background-color: rgb(148, 146, 255);*/
+.sp{
+    font-family: "OrkneyBold";
 }
 span.skill:hover{
     color: cornflowerblue;
