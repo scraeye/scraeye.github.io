@@ -56,10 +56,6 @@ h4{
     margin: 0px 0px 0px 0px;
 }
 
-#legend{
-    /*float: right;*/
-}
-
 #legend h4{
     font-style: italic;
     font-weight: normal;
@@ -117,6 +113,7 @@ li::before {
 
 .cert{
     color: var(--main-color);
+    font-family: "OrkneyBold";
 }
 .sp{
     font-family: "OrkneyBold";
